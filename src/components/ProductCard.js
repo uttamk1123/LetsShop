@@ -44,8 +44,11 @@ export const ProductCard = ({ product }) => {
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6" /><circle cx="9" cy="21" r="1" fill="currentColor" /><circle cx="18" cy="21" r="1" fill="currentColor" /></svg>
                         </button>
                 }
-                <span id={`price-${product.id}`} className="inline-flex items-start self-end bg-brand-softer border border-brand-subtle text-fg-brand-strong text-sm font-bold px-1.5 py-0.5 rounded-sm">
-                    $ {product.price}
+                <span id={`price-${product.id}`} className="inline-flex items-center self-end bg-brand-softer border border-brand-subtle text-fg-brand-strong text-sm font-bold px-1.5 py-0.5 rounded-sm">
+                    <svg className="me-1 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <text x="12" y="18" textAnchor="middle" fontSize="18" fontWeight="700" fill="currentColor">₹</text>
+                    </svg>
+                    {product.price}
                 </span>
             </div>
         </div>
