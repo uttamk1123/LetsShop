@@ -1,4 +1,3 @@
-import letsShop from '../assets/shopping-bag.png'
 import { NavLink } from 'react-router-dom'
 
 export const EmptyCart = () => {
